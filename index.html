@@ -1,0 +1,55 @@
+<!-- The main HTML file with the structure of the Tic-Tac-Toe game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+<!-- Container for the game -->
+<div class="container">
+    <!-- Heading to display whose turn it is -->
+    <h1 id="turn">X's Turn</h1>
+
+    <!-- Game board with cells -->
+    <div id="board" class="row text-center">
+        <div class="col cell" data-index="0"></div>
+        <div class="col cell" data-index="1"></div>
+        <div class="col cell" data-index="2"></div>
+        <div class="w-100"></div>
+        <div class="col cell" data-index="3"></div>
+        <div class="col cell" data-index="4"></div>
+        <div class="col cell" data-index="5"></div>
+        <div class="w-100"></div>
+        <div class="col cell" data-index="6"></div>
+        <div class="col cell" data-index="7"></div>
+        <div class="col cell" data-index="8"></div>
+    </div>
+
+    <!-- Button to restart the game -->
+    <button id="reset" class="btn btn-primary mt-3">Restart Game</button>
+
+    <!-- Bootstrap alert for game result -->
+    <div id="result" class="alert alert-dismissible fade show mt-3" role="alert" style="display: none;">
+        <strong id="result-message"></strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript file for game logic -->
+<script src="script.js"></script>
+</body>
+</html>

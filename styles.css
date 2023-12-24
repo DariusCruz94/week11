@@ -1,0 +1,22 @@
+.cell {
+  border: 1px solid #000;
+  height: 100px;
+  cursor: pointer;
+}
+
+.cell::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.cell.clicked::after {
+  pointer-events: none;
+}
+
+body {
+  background-color: aqua;
+}
